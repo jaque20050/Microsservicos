@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "2e1d36ea-338b-467e-a081-53b2fd67f705",
+		"name": "Petshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Animais",
+			"item": [
+				{
+					"name": "Consultar todos os animais",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8011/controle-animais-ms/api/animais",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8011",
+							"path": [
+								"controle-animais-ms",
+								"api",
+								"animais"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar Animal",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dono\":11,\r\n    \"nome\":\"Pipoca\",\r\n    \"idade\":1,\r\n    \"raca\":\"Gato preto\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8011/controle-animais-ms/api/animais",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8011",
+							"path": [
+								"controle-animais-ms",
+								"api",
+								"animais"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar animais do Dono",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8011/controle-animais-ms/api/animais/2/lista",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8011",
+							"path": [
+								"controle-animais-ms",
+								"api",
+								"animais",
+								"2",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pessoas",
+			"item": [
+				{
+					"name": "Cadastrar Pessoas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\":\"Luciane\",\r\n    \"sobrenome\":\"Camilo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8011/controle-pessoas-ms/api/pessoas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8011",
+							"path": [
+								"controle-pessoas-ms",
+								"api",
+								"pessoas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar todas as pessoas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8011/controle-pessoas-ms/api/pessoas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8011",
+							"path": [
+								"controle-pessoas-ms",
+								"api",
+								"pessoas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8011/controle-pessoas-ms/api/pessoas/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8011",
+							"path": [
+								"controle-pessoas-ms",
+								"api",
+								"pessoas",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
